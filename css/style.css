@@ -83,7 +83,7 @@ header h1 {
     background-color: rgb(180, 180, 180);
 }
 .a_inicio {
-    color: white;
+    color: rgb(82, 82, 82);
     font-size: 14pt; 
     text-decoration: none;
     text-align: center;
@@ -91,5 +91,5 @@ header h1 {
 }
 
 .a_inicio:hover {
-    color: #f0f0f0; 
+    color: rgb(65, 65, 65);
 }

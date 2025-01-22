@@ -38,7 +38,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(156, 156, 156);
     padding-left: 10px;
 }
 
@@ -74,22 +74,23 @@ header h1 {
     align-items: center;
     width: 400px;
     height: 400px; 
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(156, 156, 156);
     transition: all 0.5s;
 }
 
 .li_inicio:hover {
     transform: scale(1.05); 
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(207, 207, 207);
 }
 .a_inicio {
     color: rgb(82, 82, 82);
     font-size: 14pt; 
     text-decoration: none;
     text-align: center;
-    transition: color 0.3s ease;
+    transition: all 0.5s;
+    font-weight: bold;
 }
 
 .a_inicio:hover {
-    color: rgb(65, 65, 65);
+    color: rgb(161, 161, 161);
 }

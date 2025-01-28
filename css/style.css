@@ -1,6 +1,7 @@
 /** Body **/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
 /** Menu de navegacion **/
@@ -46,6 +47,16 @@ header h1 {
     color: rgb(82, 82, 82);
 }
 
+header img {
+    width: 100px;
+    height: 100px;
+}
+header a {
+    text-decoration: none;
+}
+header a:visited {
+    color: rgb(82, 82, 82);
+}
 /** Menu inicio **/
 #nav_inicio {
     display: flex; 
@@ -58,17 +69,7 @@ header h1 {
     box-sizing: border-box; 
 }
 
-#ul_inicio {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 80px; 
-    padding: 0;
-    margin: 0;
-}
-
-.li_inicio {
+.a_inicio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,20 +77,20 @@ header h1 {
     height: 400px; 
     background-color: rgb(156, 156, 156);
     transition: all 0.5s;
-}
-
-.li_inicio:hover {
-    transform: scale(1.05); 
-    background-color: rgb(207, 207, 207);
-}
-.a_inicio {
     color: rgb(82, 82, 82);
     font-size: 14pt; 
     text-decoration: none;
     text-align: center;
     transition: all 0.5s;
     font-weight: bold;
+    margin: 100px 20px 10px 20px
 }
+
+.a_inicio:hover {
+    transform: scale(1.05); 
+    background-color: rgb(207, 207, 207);
+}
+
 
 .a_inicio:hover {
     color: rgb(161, 161, 161);

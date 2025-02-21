@@ -1,7 +1,13 @@
 /** Body **/
+html, body {
+   height: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    min-height: 100%;
+    background: linear-gradient(180deg, #0a0a0a, #1a1a1a); 
+    background-attachment: fixed
 }
 
 /** Menu de navegacion **/
@@ -31,23 +37,33 @@ body {
 }
 
 .a_menu:hover {
-    color: black;
-    font-size: 18pt;
+    color: rgb(173, 173, 173);
 }
 
 /** header **/
+
+
 header {
     display: flex;
     align-items: center;
-    background-color: rgb(156, 156, 156);
+    margin-top: 10px;
+    background: linear-gradient(90deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     padding-left: 10px;
+    border-radius: 20px;
 }
 
 header h1 {
     color: rgb(82, 82, 82);
+    transition: all 0.5s;
+}
+
+header h1:hover {
+    color: rgb(173, 173, 173);
 }
 
 header img {
+    padding: 5px;
     width: 100px;
     height: 100px;
 }
@@ -75,23 +91,155 @@ header a:visited {
     align-items: center;
     width: 400px;
     height: 400px; 
-    background-color: rgb(156, 156, 156);
-    transition: all 0.5s;
+    background: linear-gradient(90deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
     color: rgb(82, 82, 82);
     font-size: 14pt; 
     text-decoration: none;
     text-align: center;
     transition: all 0.5s;
     font-weight: bold;
-    margin: 100px 20px 10px 20px
+    margin: 250px 20px 10px 20px;
+    border-radius: 10px;
 }
 
 .a_inicio:hover {
-    transform: scale(1.05); 
-    background-color: rgb(207, 207, 207);
+    transition: all 0.5s;
+    background: linear-gradient(145deg, #b9b9b9, #808080); /* Brillo blanco */
+    border: 2px solid #ffffff; /* Borde encendido */
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8); /* Glow más fuerte */
+    color: black; /* Opcional: Cambia el texto a negro para contraste */
 }
 
 
-.a_inicio:hover {
-    color: rgb(161, 161, 161);
+/** footer **/
+
+footer {
+    margin-top: auto;
+    background: linear-gradient(90deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#facebook, #twitter, #instagram, #youtube {
+    text-align: left;
+    color: rgb(82, 82, 82);
+    font-size: 25pt;
+    margin: 0 10px;
+    transition: all 0.5s;
+}
+
+#facebook:hover {
+    color: #405c9c
+}
+
+#twitter:hover {
+    color: #1da1f2
+}
+#youtube:hover {
+    color: #ff0000
+}  
+
+#instagram:hover {
+    color: #e1306c
+}
+
+
+/** Introduccion **/
+
+.introduccion {
+    margin: 20px;
+    background: linear-gradient(90deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: rgb(82, 82, 82);
+}
+
+.introduccion p {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/** Menu paso1 **/
+
+#nav_paso1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 50vh; 
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+.a_paso1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px; 
+    background: linear-gradient(90deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    color: rgb(82, 82, 82);
+    font-size: 14pt; 
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+    font-weight: bold;
+    margin: 100px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+.a_paso1:hover {
+    transition: all 0.5s;
+    background: linear-gradient(145deg, #b9b9b9, #808080); /* Brillo blanco */
+    border: 2px solid #ffffff; /* Borde encendido */
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8); /* Glow más fuerte */
+    color: black; /* Opcional: Cambia el texto a negro para contraste */
+}
+
+
+
+/** Componentes **/
+#componentes {
+    color: rgb(82, 82, 82);
+}
+
+#componbentes h2 {
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+}
+
+#cpu, #gpu, #mobo, #ram, #caja, #refri, #psu, #discoduro, #discoduro2, #ventiladores {
+    background: linear-gradient(90deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.caja_specs {
+    background: linear-gradient(90deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

@@ -8,6 +8,7 @@ body {
     min-height: 100%;
     background: linear-gradient(180deg, #0a0a0a, #1a1a1a); 
     background-attachment: fixed
+    
 }
 
 /** Menu de navegacion **/
@@ -203,6 +204,7 @@ footer {
     border-radius: 10px;
 }
 
+
 .a_paso1:hover {
     transition: all 0.5s;
     background: linear-gradient(145deg, #b9b9b9, #808080); /* Brillo blanco */
@@ -212,34 +214,48 @@ footer {
 }
 
 
-
-/** Componentes **/
-#componentes {
+.componentes, .perifericos {
     color: rgb(82, 82, 82);
-}
-
-#componbentes h2 {
-    color: rgb(82, 82, 82);
-    font-weight: bold;
-}
-
-#cpu, #gpu, #mobo, #ram, #caja, #refri, #psu, #discoduro, #discoduro2, #ventiladores {
     background: linear-gradient(90deg, #111111, #1a1a1a);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
-.caja_specs {
+
+
+.contenido {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contenido .texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido img {
+    max-width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    margin-top: 100px;
+}
+
+
+.contenido .texto p {
+    margin-bottom: 20px; /* Espacio entre el párrafo y la sección specs-box */
+}
+
+.caja_especificaciones {
     background: linear-gradient(90deg, #111111, #1a1a1a);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0; /* Elimina el margen superior e inferior */
 }
+
+/* ...existing code... */

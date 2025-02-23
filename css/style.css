@@ -214,7 +214,7 @@ footer {
 }
 
 
-.componentes, .perifericos {
+.componentes, .perifericos, .materiales {
     color: rgb(82, 82, 82);
     background: linear-gradient(90deg, #111111, #1a1a1a);
     border: 2px solid rgba(255, 255, 255, 0.2);
